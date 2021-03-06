@@ -1,0 +1,19 @@
+{
+  "manifest_version": 2,
+  "name": "WaniKani title",
+  "version": "1.1",
+  "description": "Set WaniKani review count in browser title",
+  "content_scripts": [
+    {
+      "matches": ["https://www.wanikani.com/dashboard", "https://www.wanikani.com/review"],
+      "js": ["set_title.js"],
+      "run_at": "document_idle"
+    }
+  ],
+  "icons": {
+    "16": "logo-16.png",
+    "32": "logo-32.png",
+    "48": "logo-48.png",
+    "128": "logo-128.png"
+  }
+}
